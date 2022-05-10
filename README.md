@@ -1,11 +1,18 @@
 # UNO-Card-Recognition
-This project's goal was to recognize cards from the game UNO. The application takes input from a file or a camera and identify cards in an image. The project includes creating the image dataset on which the recognition procedure will be performed. The dataset folder must be imported into the Jupyter notebook. The following libraries need to be imported. 
+### This project's goal was to recognize cards from the game UNO. The application takes input from a file or a camera and identify cards in an image. The project includes creating the image dataset on which the recognition procedure will be performed. The dataset folder must be imported into the Jupyter notebook. 
+
+#####The following libraries need to be imported. 
 
 •	glob
+
 •	cv2 
+
 •	os
+
 •	matplotlib.pyplot 
+
 •	numpy as np
+
 •	random
 
 # Step A: UNO Number Detection
@@ -82,29 +89,39 @@ Test against testing data
 
 
 
-# Step D: CW2_Final
+# Step D: CW2_Final (Final-Combined-Webcam)
 
-The previous stages are repeated in this stage. For the camera to detect the cards quickly and precisely, the setup background must be the same (the cards were placed on a black background). When utilizing the camera, the command cap = cv. VideoCapture(0) . Whereby selecting 0 this will launch the webcam, while 1 will launch the connected camera (phone). For improved detection, the camera has been inverted.
+The previous stages are repeated in this stage. 
+For the camera to detect the cards quickly and precisely, the setup background must be the same (the cards were placed on a black background).
+
+When utilizing the camera, the command cap = cv. VideoCapture(0) . Whereby selecting 1 this will launch the webcam, while 0 will launch the connected camera (phone).
+For improved detection, the camera has been inverted.
 
 
 
-# Step E: Webcam Python Script
+# Step E: Webcam + DATASET - Python Script
 
-This script consists of following arguments. These arguments will allow the user to choose which camera to use (1,0) and to enter any image they wish to test (all image names in the dataset must be spelled the same). 
+>This script consists of following arguments.
+>> These arguments will allow the user to choose which camera source to use (1,0)
+>>> And to upload any image they wish to test (all image names in the dataset must be spelled the same). 
 
 •	'--images', help="Input dataset"
+
 •	'--camdevice', type=int, default=0, help="Camera number"
+
 •	'--mode', choices= ['livecam', 'staticimg'], default='livecam', help="Mode"
+
 •	'--input', type=str, default='', help="Input image for detection"
 
 
 
+To run the python script using static images (DATASET):
 
-To run the python script using static images (dataset):
-python webcam-2.py --mode staticimg --images DATASET –input DATASET/ONE_Y.jpeg. 
+python Final-cam-data.py --mode staticimg --images DATASET --input DATASET/nine_R 
 
 
-To run the python script using the live cam (webcam): 
-python webcam-2.py --mode livecam --camdevice 1 --images DATASET
+To run the python script using the live cam (Webcam): 
+
+python Final-cam-data.py --mode livecam --camdevice 1 --images DATASET
 
 
