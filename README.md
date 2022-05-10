@@ -82,7 +82,7 @@ Test against testing data
 
 
 
-# Step D: CW2_WEBCAM_FINAL_EXCEPT_ZERO_Y
+# Step D: CW2_Final
 
 The previous stages are repeated in this stage. For the camera to detect the cards quickly and precisely, the setup background must be the same (the cards were placed on a black background). When utilizing the camera, the command cap = cv. VideoCapture(0) . Whereby selecting 0 this will launch the webcam, while 1 will launch the connected camera (phone). For improved detection, the camera has been inverted.
 
