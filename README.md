@@ -69,17 +69,29 @@ Test against testing data
 # Step C: UNO Combination of Colour and Number
 
 -The dataset is loaded 
+
 -Find _Cards 
+
 -An image is picked.
+
 -A Gaussian blur is applied, followed by an adaptive threshold to find the edges.
+
 -Dilation is applied to the image to close any contours. 
+
 - Estimate the card width and height 
+
 - Compute perspectives transform matrix and get wrapped image which is only the card. 
+
 -Find _Colour
+
 -Get _Number
+
 -Find card for each image 
+
 -Normalize image size 
+
 -Train the colour and number 
+
 -Test with data
 
 
@@ -90,7 +102,10 @@ Test against testing data
 The previous stages are repeated in this stage. 
 For the camera to detect the cards quickly and precisely, the setup background must be the same (the cards were placed on a black background).
 
-When utilizing the camera, the command cap = cv. VideoCapture(0) . Whereby selecting 1 this will launch the webcam, while 0 will launch the connected camera (phone).
+When utilizing the camera, the command cap = cv. VideoCapture(0).
+
+Whereby selecting 1 this will launch the webcam, while 0 will launch the connected camera (phone).
+
 For improved detection, the camera has been inverted.
 
 
@@ -98,8 +113,6 @@ For improved detection, the camera has been inverted.
 # Step E: Webcam + DATASET - Python Script
 
 >This script consists of following arguments.
->> These arguments will allow the user to choose which camera source to use (1,0)
->>> And to upload any image they wish to test (all image names in the dataset must be spelled the same). 
 
 •	'--images', help="Input dataset"
 
@@ -109,14 +122,17 @@ For improved detection, the camera has been inverted.
 
 •	'--input', type=str, default='', help="Input image for detection"
 
+>> These arguments will allow the user to choose which image source to use (webcam "livecam" OR DATASET "staticimg")
+>>> All image names in the dataset must be spelled the same 
 
 
-To run the python script using static images (DATASET):
+
+##### To run the python script using static images (DATASET):
 
 python Final-cam-data.py --mode staticimg --images DATASET --input DATASET/nine_R 
 
 
-To run the python script using the live cam (Webcam): 
+##### To run the python script using the live cam (Webcam): 
 
 python Final-cam-data.py --mode livecam --camdevice 1 --images DATASET
 
