@@ -102,11 +102,9 @@ Test against testing data
 The previous stages are repeated in this stage. 
 For the camera to detect the cards quickly and precisely, the setup background must be the same (the cards were placed on a black background).
 
-When utilizing the camera, the command cap = cv. VideoCapture(0).
+When utilizing the camera, the command cap = cv. VideoCapture(0). Whereby selecting 1 this will launch the webcam, while 0 will launch the connected camera (phone).
 
-Whereby selecting 1 this will launch the webcam, while 0 will launch the connected camera (phone).
-
-For improved detection, the camera has been inverted.
+For improved detection, the camera has been inverted/flipped.
 
 
 
@@ -123,16 +121,16 @@ For improved detection, the camera has been inverted.
 •	'--input', type=str, default='', help="Input image for detection"
 
 >> These arguments will allow the user to choose which image source to use (webcam "livecam" OR DATASET "staticimg")
->>> All image names in the dataset must be spelled the same 
+>> All image names in the dataset must be spelled the same 
 
 
 
-##### To run the python script using static images (DATASET):
+### To run the python script using static images (DATASET):
 
 python Final-cam-data.py --mode staticimg --images DATASET --input DATASET/nine_R 
 
 
-##### To run the python script using the live cam (Webcam): 
+### To run the python script using the live cam (Webcam): 
 
 python Final-cam-data.py --mode livecam --camdevice 1 --images DATASET
 
