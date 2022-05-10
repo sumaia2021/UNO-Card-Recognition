@@ -110,15 +110,15 @@ For improved detection, the camera has been inverted/flipped.
 
 # Step E: Webcam + DATASET - Python Script
 
->This script consists of following arguments.
+>This script consists of the following arguments.
 
 •	'--images', help="Input dataset"
 
-•	'--camdevice', type=int, default=0, help="Camera number"
+•	'--camdevice',  help="Camera number"
 
 •	'--mode', choices= ['livecam', 'staticimg'], default='livecam', help="Mode"
 
-•	'--input', type=str, default='', help="Input image for detection"
+•	'--input', help="Input image for detection"
 
 > These arguments will allow the user to choose which image source to use (webcam "livecam" OR DATASET "staticimg")
 
