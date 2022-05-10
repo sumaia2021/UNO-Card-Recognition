@@ -1,18 +1,14 @@
 # UNO-Card-Recognition
 ### This project's goal was to recognize cards from the game UNO. The application takes input from a file or a camera and identify cards in an image. The project includes creating the image dataset on which the recognition procedure will be performed. The dataset folder must be imported into the Jupyter notebook. 
 
-#####The following libraries need to be imported. 
+##### The following libraries need to be imported. 
 
 •	glob
-
 •	cv2 
-
 •	os
-
+• argparse
 •	matplotlib.pyplot 
-
 •	numpy as np
-
 •	random
 
 # Step A: UNO Number Detection
