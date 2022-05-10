@@ -120,7 +120,8 @@ For improved detection, the camera has been inverted/flipped.
 
 •	'--input', type=str, default='', help="Input image for detection"
 
->> These arguments will allow the user to choose which image source to use (webcam "livecam" OR DATASET "staticimg")
+> These arguments will allow the user to choose which image source to use (webcam "livecam" OR DATASET "staticimg")
+
 >> All image names in the dataset must be spelled the same 
 
 
