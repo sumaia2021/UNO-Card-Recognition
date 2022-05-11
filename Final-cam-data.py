@@ -340,7 +340,7 @@ if args.mode == "livecam":
       break
 
     detect_uno(frame)
-    cv.imshow("UNO Card detection", frame)
+    cv.imshow("Uno_Card_Recognition", frame)
 
 
     # Quit on escape
@@ -353,7 +353,7 @@ if args.mode == "livecam":
 elif args.mode == "staticimg":
   frame = cv.imread(args.input)
   detect_uno(frame)
-  cv.imshow("UNO Cards Recognition", frame)
+  cv.imshow("Uno_Card_Recognition", frame)
 
   cv.waitKey()
 
