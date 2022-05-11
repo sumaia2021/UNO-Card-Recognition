@@ -108,7 +108,7 @@ For improved detection, the camera has been inverted/flipped.
 
 
 
-# Step E: Webcam + DATASET - Python Script
+# Step E: Webcam + DATASET - Python Script (Final-cam-data)
 
 >This script consists of the following arguments.
 
