@@ -97,7 +97,7 @@ Test against testing data
 
 
 
-# Step D: CW2_Final (Final-Combined-Webcam)
+# Step D: Final-Combined-Webcam 
 
 The previous stages are repeated in this stage. 
 For the camera to detect the cards quickly and precisely, the setup background must be the same (the cards were placed on a black background).
