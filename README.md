@@ -128,7 +128,7 @@ For improved detection, the camera has been inverted/flipped.
 
 ### To run the python script using static images (DATASET):
 
-python Final-cam-data.py --mode staticimg --images DATASET --input DATASET/nine_R 
+python Final-cam-data.py --mode staticimg --images DATASET --input DATASET/nine_R.jpg
 
 
 ### To run the python script using the live cam (Webcam): 
